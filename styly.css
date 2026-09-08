@@ -1,0 +1,517 @@
+/* Reset básico e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfcf6; 
+    background-image: linear-gradient(rgba(253, 252, 246, 0.85), rgba(253, 252, 246, 0.85)), url('fundo-bio.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+:root {
+    --cor-primaria: #1b5e20; 
+    --cor-secundaria: #0288d1; 
+    --cor-branca: #ffffff;
+    --cor-texto: #333333;
+}
+
+/* ==========================================
+   Cabeçalho (AGORA SEMPRE VISÍVEL)
+   ========================================== */
+header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(27, 94, 32, 0.95); 
+    backdrop-filter: blur(5px); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;       
+    object-fit: cover;  
+    border-radius: 50%; 
+    background-color: var(--cor-branca); 
+}
+
+.logos h2 {
+    color: #a5d6a7; 
+    font-weight: 700;
+}
+
+.titulos-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.titulos-header h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--cor-branca);
+    margin: 0;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+.titulos-header p {
+    font-size: 0.85rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #e8f5e9; 
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e8f5e9;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* ==========================================
+   Capa Inicial (AGORA É UM BANNER NORMAL)
+   ========================================== */
+.hero {
+    height: 60vh;
+    color: var(--cor-branca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background-image: linear-gradient(rgba(10, 30, 15, 0.75), rgba(10, 30, 15, 0.75)), url("hero-bio.jpeg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    position: relative;
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+#conteudo-principal {
+    display: block; 
+    opacity: 1;
+}
+
+/* Botões da Capa (Escondidos pois não precisamos mais) */
+#btn-saber-mais {
+    display: none;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--cor-branca);
+    border: 2px solid var(--cor-branca);
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: var(--cor-branca);
+    color: var(--cor-primaria);
+}
+
+.btn-outline.dark {
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.btn-outline.dark:hover {
+    background: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+.section-title {
+    color: var(--cor-primaria);
+    text-align: center;
+    margin: 50px 0 30px;
+    font-size: 2.2rem;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.text-left {
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+
+.fotos {
+    padding: 40px 50px 70px;
+    text-align: center;
+    background-color: transparent; 
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 320px;
+    background: var(--cor-branca); 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+    line-height: 1.4;
+}
+
+img.card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 3px solid var(--cor-secundaria);
+    cursor: pointer; 
+    transition: opacity 0.3s;
+}
+
+img.card-img:hover {
+    opacity: 0.8; 
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 50px;
+    gap: 60px;
+    background-color: transparent; 
+}
+
+.sobre-texto {
+    max-width: 600px; 
+    background-color: rgba(253, 252, 246, 0.95); 
+    padding: 35px 40px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+    backdrop-filter: blur(4px); 
+    border: 1px solid rgba(27, 94, 32, 0.2); 
+}
+
+.sobre-texto .section-title {
+    margin-top: 0;
+}
+
+.sobre-texto p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: var(--cor-texto);
+    font-weight: 500; 
+}
+
+img.sobre-img {
+    width: 450px;
+    height: 350px;
+    border-radius: 15px;
+    object-fit: cover; 
+    box-shadow: 10px 10px 0px var(--cor-secundaria); 
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 0; 
+    box-shadow: 0 -8px 20px rgba(0,0,0,0.15); 
+    position: relative;
+    z-index: 10;
+}
+
+/* Modais */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    backdrop-filter: blur(4px); 
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background-color: var(--cor-branca, #ffffff);
+    position: relative; 
+    width: 95%;
+    max-width: 1000px;
+    max-height: 85vh;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    animation: modalEntrada 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    color: #888;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    color: var(--cor-secundaria);
+    transform: scale(1.1); 
+}
+
+.modal-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.modal-sidebar img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    display: block; 
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    padding-right: 15px;
+}
+
+.modal-body p {
+    color: var(--cor-texto, #333333);
+    line-height: 1.8;
+    margin-bottom: 20px; 
+    text-align: left;
+    font-size: 1.05rem;
+}
+
+/* Modal de imagens grandes (Galeria) */
+.img-modal-content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    max-width: 90%;
+    overflow: visible; 
+}
+
+.img-modal-content .close-btn {
+    top: -45px;
+    right: 0;
+    color: #ffffff; 
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-ampliada {
+    max-width: 100%;
+    max-height: 75vh;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    object-fit: contain;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+#btn-prev { left: 10px; }
+#btn-next { right: 10px; }
+
+#link-creditos {
+    color: #ffffff;
+    background-color: var(--cor-secundaria);
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+@keyframes modalEntrada {
+    from { opacity: 0; transform: translateY(30px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ==========================================
+   RESPONSIVIDADE (CELULARES E TABLETS)
+   ========================================== */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .titulos-header {
+        position: relative; 
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+
+    .titulos-header h3 {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .sobre-texto {
+        padding: 25px 20px;
+        width: 100%;
+    }
+
+    img.sobre-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .fotos {
+        padding: 40px 20px;
+    }
+
+    .modal-content {
+        flex-direction: column; 
+        padding: 30px 20px;     
+        gap: 20px;
+        max-height: 90vh;
+    }
+
+    .modal-sidebar {
+        width: 100%;            
+        margin-bottom: 10px;
+    }
+
+    .modal-sidebar img {
+        height: auto;
+        max-height: 250px;      
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .modal-body {
+        padding-right: 0;
+    }
+
+    .modal-body p {
+        text-align: left;       
+        font-size: 1rem;
+    }
+}

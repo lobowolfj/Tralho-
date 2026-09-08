@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filo dos Cordados - Biologia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styly.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <header id="cabecalho-principal">
+        <div class="logos">
+            <img src="bio-logo.jpeg" alt="Logo Biologia" class="logo-img">
+            <h2 style="cursor: default;">BIO2</h2> 
+        </div>
+        
+        <div class="titulos-header">
+            <h3>Filo dos Cordados</h3>
+            <p>Evolução, Sustentação e a Formação dos Vertebrados</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#sobre">CARACTERÍSTICAS</a></li>
+                <li><a href="#fotos">EXEMPLOS</a></li>
+                <li><a href="#reproducao">REPRODUÇÃO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero-section">
+            <div class="hero-content" id="conteudo-hero">
+                <h1>Filo dos Cordados</h1>
+                <p>Da notocorda à coluna vertebral: a jornada evolutiva</p>
+                <button id="btn-saber-mais" class="btn-outline">Explorar o Filo</button>
+            </div>
+        </section>
+
+        <div id="conteudo-principal">
+            
+            <section id="sobre" class="sobre">
+                <img src="caracteristicas-cordado.jpg" alt="Esquema comparativo das características dos cordados" class="sobre-img">
+                <div class="sobre-texto">
+                    <h2 class="section-title text-left" style="margin-bottom: 15px;">A Base do Nosso Filo</h2>
+                    <p style="margin-bottom: 15px;">Como você pode ver no esquema ao lado, a grande novidade evolutiva do nosso grupo é a <strong>notocorda</strong>. Mas nós temos outras três características exclusivas que aparecem em alguma fase da vida:</p>
+                    <ul style="margin-left: 20px; line-height: 1.7; color: var(--cor-texto); font-weight: 500;">
+                        <li style="margin-bottom: 10px;"><strong>Notocorda:</strong> O "bastão" flexível de sustentação. Nos vertebrados, ela dá lugar à nossa famosa coluna vertebral.</li>
+                        <li style="margin-bottom: 10px;"><strong>Tubo nervoso dorsal:</strong> A estrutura que vai formar o encéfalo e a medula espinhal (protegidos pelo crânio e arcos neurais).</li>
+                        <li style="margin-bottom: 10px;"><strong>Fendas branquiais:</strong> Na faringe, originadas dos nossos ancestrais filtradores.</li>
+                        <li><strong>Cauda pós-anal:</strong> Ajuda na natação das larvas. Em nós, humanos, virou apenas um vestígio: o osso cóccix!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="fotos" class="fotos">
+                <h2 class="section-title">Conhecendo os Representantes</h2>
+                <div class="cards-container">
+                    <article class="card">
+                        <img src="cordados-exemplos-ascidias.jpg" alt="Ascídias fixas no substrato" class="card-img" data-link="#">
+                        <div class="card-content">
+                            <h3>Urocordados Sésseis</h3>
+                            <p style="font-size: 0.9rem; margin-top: 10px;"><strong>Ascídias:</strong> Animais fixos no fundo do mar. Na fase adulta, perdem a notocorda e o tubo nervoso, mantendo o corpo protegido por uma "túnica".</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="cordados-exemplos-tunicado-vida-livre.jpg" alt="Tunicado de vida livre" class="card-img" data-link="#">
+                        <div class="card-content">
+                            <h3>Tunicados Livres</h3>
+                            <p style="font-size: 0.9rem; margin-top: 10px;"><strong>Biodiversidade:</strong> Nem todo tunicado fica preso a uma rocha! Alguns nadam livremente pelas correntes marinhas, filtrando nutrientes da água.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="cordados-exemplos-anfioxo.jpg" alt="Anfioxo translúcido" class="card-img" data-link="#">
+                        <div class="card-content">
+                            <h3>Cefalocordados</h3>
+                            <p style="font-size: 0.9rem; margin-top: 10px;"><strong>Anfioxo:</strong> O "modelo" perfeito do filo. Eles mantêm a notocorda durante toda a vida adulta e costumam viver enterrados na areia da praia.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="reproducao" class="sobre">
+                <img src="cordados-mamiferos-reproducao.jpg" alt="Leoa amamentando seus filhotes" class="sobre-img">
+                <div class="sobre-texto">
+                    <h2 class="section-title text-left">Como se reproduzem?</h2>
+                    <p>No filo dos cordados a reprodução é focada na variabilidade genética (sexuada) e a maioria possui sexos separados (dioicos). O ambiente dita a regra: os grupos aquáticos basais costumam liberar gametas na água (fecundação externa), enquanto o desenvolvimento da fecundação interna foi o grande salto para conquistar a terra firme!</p>
+                    <button id="btn-historia" class="btn-outline dark">Ver Árvore Evolutiva</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- MODAL DE CLASSIFICAÇÃO / EVOLUÇÃO -->
+    <div id="modal-historia" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            
+            <div class="modal-sidebar">
+                <img src="cordados-classificacao.jpg" alt="Cladograma de classificação dos cordados">
+                <h2 class="section-title" style="margin-top: 15px; text-align: center; font-size: 1.5rem;">Linha do Tempo Evolutiva</h2>
+            </div>
+            
+            <div class="modal-body">
+                <p>O gráfico ao lado mostra exatamente como a complexidade foi aumentando ao longo de milhões de anos a partir de um ancestral comum:</p>
+                <p><strong>1. Urocordados (Tunicados):</strong> O grupo que se ramificou primeiro. Geralmente hermafroditas, realizam fecundação externa e até brotamento.</p>
+                <p><strong>2. Cefalocordados:</strong> Representados pelo anfioxo. Já possuem sexos separados e liberam gametas na água.</p>
+                <p><strong>3. Vertebrata (Craniados):</strong> Aqui o jogo muda. O surgimento do crânio, mandíbula, ossos e respiração pulmonar permitiu que peixes, anfíbios, répteis, aves e mamíferos dominassem o planeta. A fecundação interna (comum nos grupos terrestres) garantiu a proteção dos embriões!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DA GALERIA DE FOTOS -->
+    <div id="modal-imagem" class="modal">
+        <div class="modal-content img-modal-content">
+            <span class="close-btn">×</span>
+            <div class="img-container">
+                <button id="btn-prev" class="nav-btn">❮</button> 
+                <img id="img-ampliada" src="" alt="Imagem em Destaque">
+                <button id="btn-next" class="nav-btn">❯</button> 
+            </div>
+            <a id="link-creditos" href="" target="_blank">Acessar fonte da imagem</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 - Trabalho de Biologia | Informações: Ashley Furtado | Desenvolvido por: Miguel Angelo</p>
+    </footer>
+
+    <script src="scripti.js"></script>
+</body>
+</html>
