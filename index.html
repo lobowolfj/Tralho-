@@ -1,131 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filo dos Cordados - Biologia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styly.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filo dos Cordados - Biologia</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap');
+:root{--ink:#17352f;--green:#2f6658;--light:#f3f7f2;--gold:#c18b45;--text:#24312e}*{box-sizing:border-box}body{margin:0;background:var(--light);color:var(--text);font-family:Poppins,Arial,sans-serif;line-height:1.6}header{background:#17352f;color:white;padding:22px 6%;display:flex;align-items:center;gap:25px;flex-wrap:wrap;justify-content:space-between}header h2{margin:0;color:#e8c78f}header h3{margin:0;font-size:1.4rem}header p{margin:2px 0 0;color:#dce9e1}nav ul{display:flex;gap:18px;list-style:none;padding:0;margin:0;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:600;font-size:.85rem}.hero{min-height:310px;display:grid;place-items:center;text-align:center;color:white;background:linear-gradient(#17352f99,#17352f99),url('https://commons.wikimedia.org/wiki/Special:FilePath/Blue%20whale%20underwater.jpg') center/cover}.hero h1{font:700 clamp(2.2rem,6vw,4.4rem) Lora,serif;margin:0}.hero p{font-size:1.1rem}.wrap{max-width:1180px;margin:auto;padding:42px 6%}.section-title{text-align:center;color:var(--ink);font:700 2rem Lora,serif;margin:0 0 25px}.intro,.feature{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-bottom:45px}.intro img,.feature img{width:100%;height:300px;object-fit:cover;border-radius:18px;box-shadow:0 8px 25px #17352f18}.intro h2,.feature h2{font-family:Lora,serif;color:var(--ink)}ul{padding-left:22px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:22px}.card{background:white;border-radius:17px;overflow:hidden;box-shadow:0 5px 20px #17352f15;border:1px solid #dce8df}.card img{width:100%;height:175px;object-fit:cover}.card-content{padding:18px}.card h3{color:var(--green);margin:0 0 8px;font-size:1.15rem}.tag{display:inline-block;background:#e8f0e8;color:var(--green);padding:3px 9px;border-radius:20px;font-size:.75rem;font-weight:700}.timeline{border-left:4px solid var(--gold);padding-left:22px;margin:25px 0}.timeline h3{margin-bottom:0;color:var(--green)}.note{background:#fff8e9;border-left:5px solid var(--gold);padding:16px;border-radius:8px;margin:25px 0}footer{background:#17352f;color:white;text-align:center;padding:25px 6%;font-size:.9rem}@media(max-width:700px){.intro,.feature{grid-template-columns:1fr}.intro img,.feature img{height:230px}header{justify-content:center;text-align:center}}
+</style>
 </head>
 <body>
-
-    <header id="cabecalho-principal">
-        <div class="logos">
-            <h2 style="cursor: default;">BIO2</h2> 
-        </div>
-        
-        <div class="titulos-header">
-            <h3>Filo dos Cordados</h3>
-            <p>A Origem, Sustentação e a Formação dos Vertebrados</p>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="#sobre">A ORIGEM</a></li>
-                <li><a href="#fotos">CLASSIFICAÇÃO</a></li>
-                <li><a href="#fisiologia">FISIOLOGIA</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero" id="hero-section">
-            <div class="hero-content" id="conteudo-hero">
-                <h1>Filo dos Cordados</h1>
-                <p>Do período Cambriano à conquista da Terra</p>
-            </div>
-        </section>
-
-        <div id="conteudo-principal">
-            
-            <section id="sobre" class="sobre">
-                <img src="caracteristicas-cordado.jpg" alt="Esquema comparativo das características dos cordados" class="sobre-img">
-                <div class="sobre-texto">
-                    <h2 class="section-title text-left" style="margin-bottom: 10px;">Origem e Características Principais</h2>
-                    <p style="margin-bottom: 15px; font-size: 0.95rem;">Os cordados surgiram no período Cambriano, há mais de 500 milhões de anos. São animais triblásticos, celomados e deuterostômios (o ânus se forma antes da boca no desenvolvimento embrionário). Para pertencer a este filo, o animal deve apresentar <strong>cinco estruturas exclusivas</strong> em pelo menos alguma fase da sua vida:</p>
-                    <ul style="margin-left: 20px; line-height: 1.6; color: var(--cor-texto); font-weight: 500; font-size: 0.9rem;">
-                        <li style="margin-bottom: 8px;"><strong>Notocorda:</strong> Eixo flexível de sustentação dorsal. Nos vertebrados, é parcial ou totalmente substituída pela coluna vertebral.</li>
-                        <li style="margin-bottom: 8px;"><strong>Tubo Nervoso Dorsal:</strong> Estrutura localizada acima da notocorda que dá origem ao sistema nervoso central (encéfalo e medula espinhal).</li>
-                        <li style="margin-bottom: 8px;"><strong>Fendas Faringianas:</strong> Em animais aquáticos, desenvolvem-se em brânquias para respiração. Em vertebrados terrestres, desaparecem durante o desenvolvimento embrionário.</li>
-                        <li style="margin-bottom: 8px;"><strong>Cauda Pós-anal:</strong> Prolongamento do corpo fundamental para a propulsão na água. Em humanos, é reduzida a um osso vestigial (cóccix).</li>
-                        <li><strong>Endóstilo:</strong> Sulco na faringe que secreta muco para capturar partículas de alimento. Na linhagem evolutiva, originou a glândula tireoide.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="fotos" class="fotos">
-                <h2 class="section-title">Os Três Grandes Subfilos</h2>
-                <div class="cards-container">
-                    <article class="card">
-                        <img src="cordados-exemplos-ascidias.jpg" alt="Ascídias fixas no substrato" class="card-img" data-link="#">
-                        <div class="card-content">
-                            <h3>1. Urocordados (Tunicados)</h3>
-                            <p style="font-size: 0.85rem; margin-top: 10px;">Animais marinhos e filtradores. Apresentam as características completas dos cordados apenas na fase larval. Na fase adulta, tornam-se sésseis (fixos no substrato), perdem a notocorda e a cauda, e são revestidos por uma túnica.</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="cordados-exemplos-anfioxo.jpg" alt="Anfioxo translúcido" class="card-img" data-link="#">
-                        <div class="card-content">
-                            <h3>2. Cefalocordados</h3>
-                            <p style="font-size: 0.85rem; margin-top: 10px;">Animais marinhos de pequeno porte, cujo representante mais conhecido é o anfioxo. Mantêm todas as cinco características exclusivas dos cordados visíveis durante toda a sua vida adulta.</p>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img src="cordados-classificacao.jpg" alt="Evolução e classificação" class="card-img" data-link="#">
-                        <div class="card-content">
-                            <h3>3. Craniados (Vertebrados)</h3>
-                            <p style="font-size: 0.85rem; margin-top: 10px;">Cordados que desenvolveram um crânio para a proteção do encéfalo. Subdividem-se em Agnatos (peixes sem mandíbula) e Gnatostomados (animais com mandíbula, incluindo peixes, anfíbios, répteis, aves e mamíferos).</p>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section id="fisiologia" class="sobre">
-                <img src="cordados-mamiferos-reproducao.jpg" alt="Leoa amamentando seus filhotes" class="sobre-img">
-                <div class="sobre-texto">
-                    <h2 class="section-title text-left">Fisiologia e Evolução</h2>
-                    <p>O filo dos cordados conseguiu se adaptar e habitar os mais diversos ambientes (terra, água e ar). Além de avanços reprodutivos como a fecundação interna (que reduziu a dependência da água), desenvolveram sistemas internos complexos e um esqueleto especializado.</p>
-                    <button id="btn-historia" class="btn-outline dark" onclick="document.getElementById('modal-historia').style.display='flex'">Entenda a Fisiologia</button>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- MODAL DE FISIOLOGIA / DETALHES -->
-    <div id="modal-historia" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="document.getElementById('modal-historia').style.display='none'">×</span>
-            
-            <div class="modal-sidebar">
-                <img src="cordados-classificacao.jpg" alt="Cladograma de classificação dos cordados">
-                <h2 class="section-title" style="margin-top: 15px; text-align: center; font-size: 1.5rem;">Sistemas Fisiológicos</h2>
-            </div>
-            
-            <div class="modal-body">
-                <p><strong>Digestão e Circulação:</strong> Possuem sistema digestório completo (da boca ao ânus), auxiliado por órgãos anexos como o fígado e o pâncreas. O sistema circulatório é fechado (o sangue circula exclusivamente dentro de vasos) e o coração apresenta posição ventral.</p>
-                <p><strong>Endoesqueleto:</strong> O esqueleto interno (ósseo ou cartilaginoso) cresce acompanhando o desenvolvimento do animal. Essa característica eliminou a necessidade de mudas (ecdise) vista em invertebrados, permitindo que os vertebrados atingissem grandes proporções corporais na natureza.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL DA GALERIA DE FOTOS -->
-    <div id="modal-imagem" class="modal">
-        <div class="modal-content img-modal-content">
-            <span class="close-btn" onclick="document.getElementById('modal-imagem').style.display='none'">×</span>
-            <div class="img-container">
-                <button id="btn-prev" class="nav-btn">❮</button> 
-                <img id="img-ampliada" src="" alt="Imagem em Destaque">
-                <button id="btn-next" class="nav-btn">❯</button> 
-            </div>
-            <a id="link-creditos" href="" target="_blank">Acessar fonte da imagem</a>
-        </div>
-    </div>
-
-    <footer>
-        <p>© 2026 - Trabalho de Biologia | Pesquisa: Ashley Furtado | Desenvolvido por: Miguel Angelo</p>
-    </footer>
-
-    <script src="scripti.js"></script>
-</body>
-</html>
+<header><div><h2>BIO2</h2></div><div><h3>Filo dos Cordados</h3><p>Origem, classificação e diversidade dos animais cordados</p></div><nav><ul><li><a href="#origem">ORIGEM</a></li><li><a href="#classificacao">CLASSIFICAÇÃO</a></li><li><a href="#vertebrados">VERTEBRADOS</a></li><li><a href="#fisiologia">FISIOLOGIA</a></li></ul></nav></header>
+<section class="hero"><div><h1>Filo dos Cordados</h1><p>Da notocorda aos mamíferos, aves, répteis, anfíbios e peixes</p></div></section>
+<main class="wrap">
+<section id="origem" class="intro"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lancelet.jpg" alt="Anfioxo, exemplo de cefalocordado"><div><h2>O que são cordados?</h2><p>Os cordados são animais que apresentam, em alguma fase da vida, cinco características principais: <strong>notocorda, tubo nervoso dorsal, fendas faringianas, cauda pós-anal e endóstilo ou tireoide</strong>.</p><p>O filo inclui animais marinhos simples e também vertebrados muito complexos, como seres humanos, baleias, aves e elefantes.</p></div></section>
+<section id="classificacao"><h2 class="section-title">Classificação dos cordados</h2><div class="cards">
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ascidiacea.jpg" alt="Ascídia"><div class="card-content"><span class="tag">Subfilo</span><h3>Urocordados ou tunicados</h3><p>São animais marinhos, geralmente filtradores. As larvas nadam e apresentam as características dos cordados; muitos adultos ficam presos a rochas e perdem a notocorda e a cauda.</p><p><strong>Exemplo:</strong> ascídias.</p></div></article>
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Branchiostoma_lanceolatum.jpg" alt="Anfioxo"><div class="card-content"><span class="tag">Subfilo</span><h3>Cefalocordados</h3><p>São pequenos animais marinhos que mantêm a notocorda, o tubo nervoso dorsal, as fendas faringianas e a cauda pós-anal durante a vida adulta.</p><p><strong>Exemplo:</strong> anfioxo.</p></div></article>
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vertebrata.jpg" alt="Diversidade de vertebrados"><div class="card-content"><span class="tag">Subfilo</span><h3>Vertebrados</h3><p>Possuem crânio e coluna vertebral, ou estruturas equivalentes durante o desenvolvimento. Incluem peixes, anfíbios, répteis, aves e mamíferos.</p></div></article>
+</div></section>
+<section id="vertebrados" style="margin-top:50px"><h2 class="section-title">Os principais grupos de vertebrados</h2><div class="cards">
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Great_white_shark.jpg" alt="Tubarão-branco"><div class="card-content"><h3>🐟 Peixes</h3><p>Vivem principalmente em ambientes aquáticos e respiram por brânquias. Possuem corpo adaptado à natação e, em geral, são ectotérmicos.</p><p><strong>Exemplos:</strong> sardinha, tilápia, tubarão e cavalo-marinho.</p></div></article>
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Red-eyed_tree_frog.jpg" alt="Perereca"><div class="card-content"><h3>🐸 Anfíbios</h3><p>Passam por mudanças durante o desenvolvimento. Muitos nascem na água, com larvas que respiram por brânquias, e depois desenvolvem pulmões e patas.</p><p><strong>Exemplos:</strong> sapos, rãs, pererecas e salamandras.</p></div></article>
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Green_sea_turtle.jpg" alt="Tartaruga marinha"><div class="card-content"><h3>🦎 Répteis</h3><p>Possuem pele geralmente seca, coberta por escamas ou placas, e respiram por pulmões. A maioria apresenta fecundação interna.</p><p><strong>Exemplos:</strong> lagartos, serpentes, crocodilos e tartarugas.</p></div></article>
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bald_eagle_Papilio.jpg" alt="Águia careca"><div class="card-content"><h3>🦅 Aves</h3><p>São vertebrados endotérmicos, possuem penas, bico e asas. Muitas voam, embora existam aves que não voam, como avestruzes e pinguins.</p><p><strong>Exemplos:</strong> águia, beija-flor, galinha e pinguim.</p></div></article>
+<article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lion_waiting_in_Namibia.jpg" alt="Leão"><div class="card-content"><h3>🦁 Mamíferos</h3><p>Possuem pelos em alguma fase da vida e glândulas mamárias, que produzem leite para alimentar os filhotes. A maioria é vivípara e apresenta cuidado parental.</p><p><strong>Exemplos:</strong> seres humanos, cães, gatos, morcegos, baleias e elefantes.</p></div></article>
+</div></section>
+<section class="feature" style="margin-top:50px"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Humpback_whale_underwater.jpg" alt="Baleia nadando"><div><h2>Por que os cordados são tão diversos?</h2><p>Ao longo da evolução, os vertebrados desenvolveram adaptações para viver em água, terra e ar. Entre elas estão nadadeiras, patas, asas, pulmões, penas, pelos, ovos resistentes e diferentes formas de reprodução.</p><div class="note"><strong>Importante:</strong> nem todo cordado é vertebrado. Urocordados e cefalocordados também pertencem ao filo, mas não possuem coluna vertebral como os vertebrados.</div></div></section>
+<section id="fisiologia"><h2 class="section-title">Características gerais e fisiologia</h2><div class="timeline"><h3>1. Sustentação</h3><p>A notocorda funciona como uma estrutura flexível de sustentação. Nos vertebrados, a coluna vertebral assume essa função principal.</p><h3>2. Sistema nervoso</h3><p>O tubo nervoso dorsal origina o encéfalo e a medula espinhal nos vertebrados.</p><h3>3. Respiração</h3><p>As fendas faringianas participam da alimentação ou da respiração em diferentes grupos. Peixes usam brânquias; vertebrados terrestres usam principalmente pulmões.</p><h3>4. Circulação e digestão</h3><p>Os vertebrados apresentam sistema circulatório fechado e sistema digestório completo, com boca e ânus.</p><h3>5. Reprodução</h3><p>A reprodução varia muito: pode haver fecundação externa ou interna, ovos ou nascimento de filhotes vivos. Mamíferos geralmente alimentam os filhotes com leite.</p></div></section>
+</main>
+<footer><p>© 2026 - Trabalho de Biologia | Filo dos Cordados</p><p>Imagens: Wikimedia Commons. Consulte as páginas das imagens para verificar autoria e licença.</p></footer>
+</body></html>
